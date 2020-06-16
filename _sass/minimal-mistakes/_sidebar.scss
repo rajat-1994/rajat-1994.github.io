@@ -127,7 +127,7 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 130px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -136,6 +136,8 @@
     }
   }
 }
+
+
 
 .author__content {
   display: table-cell;
@@ -182,10 +184,9 @@
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
+  // vertical-align: middle;
   font-family: $sans-serif;
   z-index: 20;
-  position: relative;
   cursor: pointer;
 
   li:last-child {
@@ -303,11 +304,12 @@
   }
 
   a {
-    display: block;
+    display: inline;
     margin-bottom: 5px;
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
+    padding-left: 5px;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
